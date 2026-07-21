@@ -1,5 +1,4 @@
 .DS_Store
-.gitignore
 node_modules
 public
 prof
@@ -11,3 +10,12 @@ private/
 replit.nix
 .quartz/
 quartz/cli/tui/dist/
+
+# 공개 안전성 게이트 (스펙 §6) — 좁힌 패턴(정상 글 오무시 방지)
+.env
+.env.*
+*.pem
+*.key
+secrets.*
+credentials.*
+*.credentials
